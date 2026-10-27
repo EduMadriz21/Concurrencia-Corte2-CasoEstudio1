@@ -1,0 +1,73 @@
+.raiz {
+    -fx-background-color: #f3f5f9;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.titulo {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+.tarjeta {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-color: #e2e6ee;
+    -fx-border-radius: 10;
+    -fx-padding: 14;
+    -fx-spacing: 4;
+}
+
+.etiqueta {
+    -fx-font-size: 13px;
+    -fx-text-fill: #6b7280;
+}
+
+.numero-grande {
+    -fx-font-size: 44px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1d4ed8;
+}
+
+.numero {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+#lblConfirmadas {
+    -fx-text-fill: #15803d;
+}
+
+#lblRechazadas {
+    -fx-text-fill: #b91c1c;
+}
+
+.boton-principal {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 10 0;
+    -fx-cursor: hand;
+}
+
+.boton-principal:hover {
+    -fx-background-color: #1d4ed8;
+}
+
+.boton-principal:focused {
+    -fx-border-color: #93c5fd;
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+}
+
+.estado {
+    -fx-font-size: 14px;
+    -fx-text-fill: #374151;
+}
+
+.text-area {
+    -fx-font-family: "Consolas", monospace;
+    -fx-font-size: 12px;
+}

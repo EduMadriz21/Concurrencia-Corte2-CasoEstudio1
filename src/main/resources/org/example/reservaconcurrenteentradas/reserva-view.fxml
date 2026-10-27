@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.reservaconcurrenteentradas.ReservaController"
+      styleClass="raiz" spacing="16.0" stylesheets="@reserva.css">
+    <padding>
+        <Insets top="24.0" right="24.0" bottom="24.0" left="24.0"/>
+    </padding>
+
+    <Label text="Reserva concurrente de entradas" styleClass="titulo"/>
+
+    <VBox styleClass="tarjeta" alignment="CENTER">
+        <Label text="Entradas disponibles" styleClass="etiqueta"/>
+        <Label fx:id="lblDisponibles" text="20" styleClass="numero-grande"/>
+    </VBox>
+
+    <HBox spacing="16.0">
+        <VBox styleClass="tarjeta" alignment="CENTER" prefWidth="150.0" HBox.hgrow="ALWAYS">
+            <Label text="Confirmadas" styleClass="etiqueta"/>
+            <Label fx:id="lblConfirmadas" text="0" styleClass="numero"/>
+        </VBox>
+        <VBox styleClass="tarjeta" alignment="CENTER" prefWidth="150.0" HBox.hgrow="ALWAYS">
+            <Label text="Rechazadas" styleClass="etiqueta"/>
+            <Label fx:id="lblRechazadas" text="0" styleClass="numero"/>
+        </VBox>
+    </HBox>
+
+    <Button fx:id="btnIniciar" text="Iniciar simulación" onAction="#iniciarSimulacion"
+            styleClass="boton-principal" maxWidth="Infinity"/>
+
+    <Label fx:id="lblEstado" text="Estado: Esperando simulación" styleClass="estado"/>
+
+    <Label text="Registro de actividad" styleClass="etiqueta"/>
+    <TextArea fx:id="txtRegistro" editable="false" prefRowCount="10" VBox.vgrow="ALWAYS"/>
+</VBox>
